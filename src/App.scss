@@ -1,0 +1,200 @@
+/********************************
+Common
+********************************/
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=M+PLUS+1p:wght@500&display=swap');
+
+$yellow: #FFF100;
+$orrange: #F39800;
+$blue: #37BEF0;
+$gray: #EAEAEA;
+$embact: #EC6A38;
+
+.bg.yellow{
+  background-color: $yellow;
+}
+.bg.orrange{
+  background-color: $orrange;
+}
+.bg.blue{
+  background-color: $blue;
+}
+.bg.gray{
+  background-color: $gray;
+}
+.t-normal{
+  font-weight: normal;
+}
+.sp_style{
+  display: inline-block;
+}
+
+/********************************
+Layout
+********************************/
+.container{
+  min-height: 100vh;
+}
+
+header{
+  z-index: 1;
+  border-radius: 2rem;
+  border: 3px solid white;
+  position: relative;
+
+  ::before{
+    content: '';
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border: 3px solid black;
+    border-radius: 2rem;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+  }
+
+  img.App-logo{
+    display: inline-block;
+    width: 80%;
+    max-width: 384px;
+    height: auto;
+  }
+  .inner-header{
+    padding: 1.5rem 0 0.8rem 0;
+    margin: 3px;
+    border-radius: 1.7rem;
+    text-align: center;
+    position: relative;
+  }
+  .inner-header.yellow::before{
+   content: '';
+   width: calc(100% - 28px);
+   height: calc(100% - 28px);
+   border: 3px solid $yellow;
+   border-radius: 1.7rem;
+   position: absolute;
+   top: 14px;
+   left: 14px;
+  }
+  .inner-header.orrange::before{
+    content: '';
+    width: calc(100% - 28px);
+    height: calc(100% - 28px);
+    border: 3px solid $orrange;
+    border-radius: 1.7rem;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+   }
+   .inner-header.blue::before{
+    content: '';
+    width: calc(100% - 28px);
+    height: calc(100% - 28px);
+    border: 3px solid $blue;
+    border-radius: 1.7rem;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+   }
+   .inner-header.gray::before{
+    content: '';
+    width: calc(100% - 28px);
+    height: calc(100% - 28px);
+    border: 3px solid $gray;
+    border-radius: 1.7rem;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+   }
+  h2{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 2.4rem;
+  }
+  p.subTitle{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 1.2rem;
+  }
+  img.congrats-image{
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+}
+
+main{
+  border-radius: 2rem;
+  border: 3px solid $gray;
+  padding: 1rem;
+
+  .Bobo-icon{
+    width: 1.8rem;
+    height: auto;
+    position: relative;
+    top: -1px;
+  }
+  .ttlNum{
+    background-color: #E6FAFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  p:not(.ttlNum){
+    font-size: 1.0rem;
+  }
+  .qimage{
+    width: 100%;
+    height: auto;
+  }
+  .q-set{
+    font-weight: bold;
+  }
+}
+
+footer{
+  a, small{
+    font-size: 0.8rem;
+  }
+}
+
+.b-kaitou{
+  width: 100%;
+  background: $embact;
+  border: 1px solid $embact;
+  border-radius: 2rem;
+  font-size: 1.26rem;
+  font-family: 'M PLUS 1p', sans-serif;
+  text-align: center;
+}
+
+/********************************
+BreakPoint
+********************************/
+@media (min-width: 576px) { 
+  .container{
+    max-width: 100%;
+    min-height: 100vh;
+  }
+
+  header h2{
+    font-size: 3.0rem;
+  }
+
+  main{
+    .qimage{
+      max-width: 316px;
+    }
+  }
+
+  .sp_style{
+    display: none;
+  }
+
+  .t-right{
+    text-align: right;
+  }
+
+  .b-kaitou{
+    max-width: 364px;
+    margin: 0 auto;
+    display: inherit;
+  }
+}
