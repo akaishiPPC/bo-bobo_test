@@ -134,7 +134,7 @@ const Home = (props) => {
                   </FormGroup>
                 </Col>
                 <Col className="t-right">
-                  <img src={A1img} className="qimage" alt="" />
+                  <img src={A4img} className="qimage" alt="" />
                 </Col>
               </Row>
             </div>
@@ -194,7 +194,7 @@ const Home = (props) => {
                   </FormGroup>
                 </Col>
                 <Col className="t-right">
-                  <img src={A2img} className="qimage" alt="" />
+                  <img src={A1img} className="qimage" alt="" />
                 </Col>
               </Row>
             </div>
@@ -254,7 +254,7 @@ const Home = (props) => {
                   </FormGroup>
                 </Col>
                 <Col className="t-right">
-                  <img src={A3img} className="qimage" alt="" />
+                  <img src={A2img} className="qimage" alt="" />
                 </Col>
               </Row>
             </div>
@@ -314,7 +314,7 @@ const Home = (props) => {
                   </FormGroup>
                 </Col>
                 <Col className="t-right">
-                  <img src={A4img} className="qimage" alt="" />
+                  <img src={A3img} className="qimage" alt="" />
                 </Col>
               </Row>
             </div>
